@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>creating multiple objects using constructor</title>
+<script type="text/javaScript">
+
+document.write("hello..");
+function Cars(car_brand,car_model,price)
+{
+
+   this.car_brand = car_brand;
+   this.car_model = car_model;
+   this.price = price;
+
+
+   this.made_function = function()
+  {
+
+  document.write("you going to love this car:");
+  }
+}
+
+var c1 = new Cars("Tesla","model -3 ",56);
+var c2 = new  Cars("BMW","model -4 ",65);
+c1.made_function();
+c2.made_function();
+document.write("The model is: "+c2.car_model);
+
+
+//document.write("is there anything wrong");
+
+</script>
+</head>
+
+
+<body>
+  <p style="color:blue;"> Just testing if is working </p>
+</body>
+
+
+</html>
